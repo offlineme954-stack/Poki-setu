@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#160b2e">
+<title>লক্ষ্মী সেতু 💗</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap');
+:root{--pink:#ff80b8;--purple:#b9a0ff;--white:#fff7fd}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;font-family:'Hind Siliguri',sans-serif;color:var(--white);overflow-x:hidden;background:#100820}
+body:before{content:"";position:fixed;inset:0;z-index:-3;background:radial-gradient(ellipse at 12% 15%,#793c9d 0,transparent 34%),radial-gradient(ellipse at 88% 22%,#a32a62 0,transparent 31%),radial-gradient(ellipse at 50% 95%,#252c78 0,transparent 42%),linear-gradient(145deg,#100820,#24103d 50%,#100b2b)}
+body:after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;opacity:.22;background-image:linear-gradient(#ffffff09 1px,transparent 1px),linear-gradient(90deg,#ffffff09 1px,transparent 1px);background-size:38px 38px}
+#stars{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+.rain{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.rain span{position:absolute;top:-65px;color:#ffc0df;font-weight:700;text-shadow:0 0 13px #ff65b4aa;opacity:0;white-space:nowrap;animation:fall linear infinite}
+@keyframes fall{0%{transform:translateY(-5vh) rotate(-8deg);opacity:0}12%{opacity:.48}88%{opacity:.4}100%{transform:translateY(115vh) rotate(10deg);opacity:0}}
+main{position:relative;z-index:1;width:min(94%,760px);margin:auto;padding:28px 0 34px}
+.glass{border:1px solid #ffffff29;background:linear-gradient(145deg,#ffffff19,#ffffff08);box-shadow:0 22px 90px #05020b80,inset 0 1px #ffffff22;backdrop-filter:blur(18px);border-radius:30px;padding:clamp(20px,5vw,42px);text-align:center;position:relative;overflow:hidden}
+.glass:before{content:"";position:absolute;inset:-2px;pointer-events:none;background:linear-gradient(120deg,transparent 15%,#ff8bc51c 38%,transparent 60%);transform:translateX(-100%);animation:shine 8s ease-in-out infinite}
+@keyframes shine{50%,100%{transform:translateX(100%)}}
+.tag{display:inline-block;border:1px solid #ffc2e74a;background:#ff8cc51a;color:#ffd8ec;border-radius:999px;padding:7px 16px;font-size:14px}
+h1{font-family:'Noto Serif Bengali','Hind Siliguri',serif;font-size:clamp(32px,7.8vw,60px);line-height:1.4;margin:20px 0 8px;background:linear-gradient(100deg,#fff4fc,#ffb2d8 45%,#d8c5ff 85%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px #ff76bd55)}
+.sub{color:#e8cfe9;font-size:17px;margin:0 auto 22px}
+.orb{width:100px;height:100px;margin:18px auto;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 32% 25%,#fff7ff,#ff9acb 26%,#bb63dc 56%,#5134a0 78%);box-shadow:0 0 0 8px #ffffff08,0 0 42px #ff63bd66;animation:orb 3s ease-in-out infinite;font-size:43px}
+@keyframes orb{0%,100%{transform:translateY(0) scale(1);box-shadow:0 0 0 8px #ffffff08,0 0 42px #ff63bd66}50%{transform:translateY(-7px) scale(1.045);box-shadow:0 0 0 14px #ffffff05,0 0 58px #b784ff77}}
+.panel{border:1px solid #ffffff20;background:#120c2b83;border-radius:22px;padding:21px 16px;line-height:2;font-size:18px}
+.panel p{margin:4px 0}
+.poem{margin-top:18px;text-align:left;border:1px solid #ffc0df32;background:linear-gradient(135deg,#ffb1d40e,#b8a1ff0e);padding:20px;border-radius:20px;line-height:2;color:#f8e8f5}
+.poem h2{font-size:19px;color:#ffb8d8;margin:0 0 8px;text-align:center}
+button{font:700 17px 'Hind Siliguri',sans-serif;border:0;cursor:pointer;touch-action:manipulation}
+.primary{border-radius:999px;padding:13px 25px;color:#31102e;background:linear-gradient(110deg,#ffd7ec,#ff81b9 55%,#c5a5ff);box-shadow:0 8px 28px #ff6caf42;transition:transform .2s,filter .2s}
+.primary:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.intro{margin:24px auto 0}
+#sorryZone{margin:27px auto 0;padding:15px 10px 8px;border-radius:22px;border:1px solid #ffadd633;background:#ffffff08}
+#sorryBtn{font-size:clamp(28px,7vw,40px);padding:10px 36px;color:white;border:1px solid #ffffff66;border-radius:20px;background:linear-gradient(145deg,#ff67a8,#9e55d9);box-shadow:0 10px 30px #ff67b555;animation:bounce 1.05s ease-in-out infinite}
+@keyframes bounce{0%,100%{transform:translateY(0) scale(1)}25%{transform:translateY(-18px) scale(1.04)}50%{transform:translateY(0) scale(.98)}75%{transform:translateY(-8px) scale(1.02)}}
+#apology{display:none;margin-top:22px;animation:fadeUp .7s ease both}
+#apology.show{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.question{font-size:clamp(22px,5vw,31px);font-weight:700;line-height:1.65;color:#ffe0ef;text-shadow:0 0 18px #ff7eb455;margin:0 0 10px}
+.button-row{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;margin:20px auto 6px;min-height:65px;position:relative}
+.yes{background:linear-gradient(120deg,#7fffd1,#b8ffe7);color:#103d36;border-radius:999px;padding:12px 28px;box-shadow:0 7px 25px #59ffd355}
+.no{background:linear-gradient(120deg,#ff9fbf,#ff6f94);color:#54142f;border-radius:999px;padding:12px 28px;box-shadow:0 7px 25px #ff6f9444;position:relative}
+#hint{min-height:28px;color:#ffe1f0;margin:10px 0 0}
+#celebration{display:none;margin:26px 0 6px;padding:24px 10px;border:1px solid #ffffff35;border-radius:24px;background:radial-gradient(ellipse at center,#ff83c52b,transparent 70%)}
+#celebration.show{display:block;animation:fadeUp .7s ease both}
+.name{font-family:'Noto Serif Bengali',serif;font-size:clamp(38px,11vw,74px);font-weight:700;line-height:1.5;background:linear-gradient(90deg,#fff,#ffadd7,#d3c3ff,#fff);background-size:250% auto;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 22px #ff77c9a8);animation:nameShine 2.5s linear infinite,nameIn 1.2s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes nameShine{to{background-position:250% center}}
+@keyframes nameIn{from{opacity:0;transform:scale(.35) rotate(-8deg);letter-spacing:15px}to{opacity:1;transform:scale(1) rotate(0);letter-spacing:0}}
+.sparkle{font-size:25px;display:inline-block;animation:twinkle 1.5s infinite alternate}
+@keyframes twinkle{from{transform:scale(.7) rotate(-15deg);opacity:.6}to{transform:scale(1.2) rotate(15deg);opacity:1}}
+footer{color:#d6badb;font-size:14px;margin:23px 0 0}
+footer strong{color:#ffbfdf}
+@media(max-width:430px){.glass{border-radius:23px}.panel{font-size:16px}.poem{font-size:15px}.button-row{gap:10px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<canvas id="stars"></canvas>
+<div class="rain" id="rain" aria-hidden="true"></div>
+<main>
+<section class="glass">
+  <span class="tag">একটা ছোট্ট কথা শুধু তোমার জন্য 💌</span>
+  <div class="orb">💗</div>
+  <h1>লক্ষ্মী সেতু রাগ করে না,<br>একটু হাসো প্লিজ! 🥹</h1>
+  <p class="sub">তোমার একটুখানি হাসি—আমার পুরো দিনটা সুন্দর করে দিতে পারে। 🌙</p>
+
+  <div class="panel">
+    <p>লক্ষ্মী সেতু, রাগ করে থেকো না, 🌷</p>
+    <p>একটু হাসো প্লিজ, মুখটা গোমড়া রেখো না।</p>
+    <p>তোমার হাসি চাঁদের আলোর মতো মিষ্টি, ✨</p>
+    <p>তুমি হাসলে মনটা হয় খুশিতে বৃষ্টি!</p>
+  </div>
+
+  <div class="poem">
+    <h2>🌹 তোমার জন্য কিছু শায়রি 🌹</h2>
+    <p>অভিমান যদি হয়, বলো আমায় খুলে,</p>
+    <p>চুপ করে থেকো না আর দূরে সরে গিয়ে।</p>
+    <p>একটা ছোট্ট কথা, একটা মিষ্টি হাসি,</p>
+    <p>তোমার খুশির জন্যই এত আবদার করি। 💞</p>
+    <p style="text-align:center;margin-top:12px;color:#ffb9dc">❀ ❀ ❀</p>
+    <p>ভুল যদি হয়ে থাকে, ক্ষমা করে দিও,</p>
+    <p>মন খারাপের মেঘটা একটু সরিয়ে নিও।</p>
+    <p>রাগের শেষে থাকুক মায়াভরা আলো,</p>
+    <p>আবার কথা হলে লাগবে ভীষণ ভালো। 💖</p>
+  </div>
+
+  <div class="intro">
+    <p>আচ্ছা সেতু… একটা কথা বলব? 🥺</p>
+    <p style="color:#d9c2e9">নিচের <strong style="color:#ffb8d9">SORRY</strong> বাটনে টিপ দাও</p>
+    <div id="sorryZone">
+      <button id="sorryBtn" type="button">SORRY 🥹</button>
+      <p style="font-size:13px;color:#d8b6d3;margin:12px 0 2px">একটু মন দিয়ে পড়ো, প্লিজ 💗</p>
+    </div>
+  </div>
+
+  <div id="apology">
+    <p class="question">সেতু, আমি যদি কোনো ভুল করে থাকি তাহলে সরি। আমাকে ক্ষমা করে দাও, প্লিজ। 🥺💗</p>
+    <div class="panel">
+      <p>তুমি কেন আমার ওপর রাগ করে আছো?</p>
+      <p>কোনো কথায় কষ্ট পেয়ে থাকলে আমাকে বলো—আমি তোমার কথা শুনব।</p>
+      <p>তোমাকে জোর করছি না, শুধু মন থেকে ক্ষমা চাইছি। তুমি প্রস্তুত হলে কথা বলো। 🌷</p>
+    </div>
+    <p style="margin-top:22px;font-size:19px;color:#ffe3f0">আমাকে কি ক্ষমা করে দিয়েছো? 💌</p>
+    <div class="button-row" id="buttonRow">
+      <button class="yes" id="yesBtn" type="button">হ্যাঁ, ক্ষমা করে দিলাম 💖</button>
+      <button class="no" id="noBtn" type="button">না 🙈</button>
+    </div>
+    <p id="hint" aria-live="polite"></p>
+  </div>
+
+  <div id="celebration">
+    <span class="sparkle">✨</span> <span class="sparkle">💖</span> <span class="sparkle">✨</span>
+    <div class="name">লক্ষ্মী সেতু</div>
+    <p style="font-size:19px;color:#ffe0ef;line-height:1.9">তোমার হাসিটা সব সময় এমনই সুন্দর থাকুক! 🌸<br>ধন্যবাদ, মনটা একটু নরম করার জন্য। 💗</p>
+    <span class="sparkle">🌷</span> <span class="sparkle">💕</span> <span class="sparkle">🌷</span>
+  </div>
+  <footer>Made with 💗 by <strong>MD Atikul Islam</strong></footer>
+</section>
+</main>
+<script>
+// Soft animated starfield
+const canvas=document.getElementById('stars'),ctx=canvas.getContext('2d');
+let stars=[];
+function resize(){canvas.width=innerWidth*devicePixelRatio;canvas.height=innerHeight*devicePixelRatio;canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);stars=Array.from({length:Math.min(110,Math.floor(innerWidth/5))},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*1.6+.3,a:Math.random(),s:Math.random()*.012+.003}))}
+function draw(){ctx.clearRect(0,0,innerWidth,innerHeight);for(const s of stars){s.a+=s.s;if(s.a>1||s.a<.12)s.s*=-1;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle=`rgba(255,220,245,${Math.max(.12,Math.min(.8,s.a))})`;ctx.fill()}requestAnimationFrame(draw)}
+addEventListener('resize',resize);resize();draw();
+
+// Continuous waterfall-like falling SORRY words
+const rain=document.getElementById('rain');
+for(let i=0;i<42;i++){const word=document.createElement('span');word.textContent=['SORRY','Sorry','সরি','SORRY 💗'][i%4];word.style.left=(Math.random()*100)+'%';word.style.animationDuration=(6+Math.random()*10)+'s';word.style.animationDelay=(-Math.random()*15)+'s';word.style.fontSize=(12+Math.random()*15)+'px';word.style.opacity=(.2+Math.random()*.35);rain.appendChild(word)}
+
+const sorryBtn=document.getElementById('sorryBtn');
+const apology=document.getElementById('apology');
+sorryBtn.addEventListener('click',()=>{apology.classList.add('show');apology.scrollIntoView({behavior:'smooth',block:'center'});sorryBtn.textContent='SORRY… সত্যিই সরি 💗';});
+
+const noBtn=document.getElementById('noBtn');
+const row=document.getElementById('buttonRow');
+const hint=document.getElementById('hint');
+function runAway(){
+  const rowRect=row.getBoundingClientRect();
+  const btnRect=noBtn.getBoundingClientRect();
+  const maxX=Math.max(0,rowRect.width-btnRect.width);
+  const maxY=100;
+  noBtn.style.position='absolute';
+  noBtn.style.left=Math.floor(Math.random()*Math.max(1,maxX))+'px';
+  noBtn.style.top=Math.floor(Math.random()*maxY-30)+'px';
+  hint.textContent='হিহি! 😜 না নয়, চাইলে হ্যাঁ বাটনে ক্লিক করুন 💗';
+}
+noBtn.addEventListener('pointerenter',runAway);
+noBtn.addEventListener('click',(e)=>{e.preventDefault();runAway();hint.textContent='আপনি হ্যাঁ বাটনে ক্লিক করুন 😊💖';});
+noBtn.addEventListener('touchstart',(e)=>{e.preventDefault();runAway();hint.textContent='আপনি হ্যাঁ বাটনে ক্লিক করুন 😊💖';},{passive:false});
+
+document.getElementById('yesBtn').addEventListener('click',()=>{
+  document.getElementById('celebration').classList.add('show');
+  hint.textContent='ইয়েই! অনেক অনেক ধন্যবাদ! 💖';
+  document.getElementById('celebration').scrollIntoView({behavior:'smooth',block:'center'});
+  burstConfetti();
+});
+function burstConfetti(){
+  const emojis=['💖','💕','✨','🌸','💗','🎉'];
+  for(let i=0;i<36;i++){
+    const el=document.createElement('span');el.textContent=emojis[i%emojis.length];
+    el.style.position='fixed';el.style.zIndex='20';el.style.left=(Math.random()*100)+'vw';el.style.top='-35px';
+    el.style.fontSize=(18+Math.random()*18)+'px';el.style.pointerEvents='none';
+    el.style.transition='transform '+(2+Math.random()*2)+'s ease-in, opacity 2.5s ease-in';
+    document.body.appendChild(el);
+    requestAnimationFrame(()=>{el.style.transform=`translate(${(Math.random()-.5)*180}px, ${innerHeight+100}px) rotate(${Math.random()*600-300}deg)`;el.style.opacity='0'});
+    setTimeout(()=>el.remove(),4300);
+  }
+}
+</script>
+</body>
+</html>
